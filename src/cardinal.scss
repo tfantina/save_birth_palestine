@@ -265,7 +265,7 @@ $i: 1;
 }
 
 .my {
-  @include sizing-axis('margin-top', 'marign-bottom');
+  @include sizing-axis('margin-top', 'margin-bottom');
 }
 
 .mx {
