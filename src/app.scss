@@ -1,0 +1,50 @@
+@import "cardinal.scss";
+@import "sane_defaults.scss";
+
+.body-landing {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+
+    @include media-md {
+        width: 80%;
+    }
+
+    @include media-lg {
+        width: 70%;
+    }
+
+    @include media-xx {
+        max-width: calc($space-3xl * 10);
+    }
+}
+
+h1 {
+    color: #790002;
+}
+
+.lede-card {
+    border: 1px solid black;
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #2D0000;
+        text-decoration: underline;
+    }
+}
+
+.lede-card__content {
+    padding: $space-2xs;
+    width: 60%;
+}
+
+.lede-card__img {
+    max-height: 200px;
+    justify-content: flex-end;
+    img {
+        max-height: 200px;
+    }
+}
